@@ -9,7 +9,7 @@ data class Cat(
             |Owner: ${owner ?: "no owner"}" +
             |List of vaccinations:
             |${
-            vaccinations.fold("") { result, value -> result + value + "\n" }
+                vaccinations.fold("") { result, value -> result + value + "\n" }
                 .ifEmpty { "No vaccinations" }
             }
         |""".trimMargin()
