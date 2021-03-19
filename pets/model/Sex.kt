@@ -2,9 +2,9 @@ package pets.model
 
 enum class Sex {
     MALE {
-        override fun toString(): String = "Male"
+        override fun toString() = "Male"
     },
     FEMALE {
-        override fun toString(): String = "Female"
+        override fun toString() = "Female"
     }
 }

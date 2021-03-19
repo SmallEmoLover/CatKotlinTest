@@ -8,7 +8,7 @@ data class Cat(
     var owner: Owner? = null,
     val vaccinations: MutableList<Vaccination> = mutableListOf()
 ) {
-    override fun toString(): String =
+    override fun toString() =
         """$sex cat $name, $age years old, $kind kind,
             |Owner: ${owner ?: "no owner"}" +
             |List of vaccinations:
