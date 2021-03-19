@@ -1,4 +1,4 @@
-package pet
+package pets.model
 
 enum class Sex {
     MALE {

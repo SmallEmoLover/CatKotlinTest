@@ -1,6 +1,6 @@
-package main
+package pets
 
-import pet.*
+import pets.model.*
 import java.util.Date
 
 fun main(args: Array<String>) {

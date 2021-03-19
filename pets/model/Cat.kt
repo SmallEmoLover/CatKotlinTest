@@ -1,8 +1,12 @@
-package pet
+package pets.model
 
 data class Cat(
-    val name: String, var age: Int, val sex: Sex, val kind: String,
-    var owner: Owner? = null, var vaccinations: MutableList<Vaccination> = mutableListOf()
+    val name: String,
+    var age: Int,
+    val sex: Sex,
+    val kind: String,
+    var owner: Owner? = null,
+    val vaccinations: MutableList<Vaccination> = mutableListOf()
 ) {
     override fun toString(): String =
         """$sex cat $name, $age years old, $kind kind,
@@ -12,5 +16,5 @@ data class Cat(
                 vaccinations.fold("") { result, value -> result + value + "\n" }
                 .ifEmpty { "No vaccinations" }
             }
-        |""".trimMargin()
+            |""".trimMargin()
 }
